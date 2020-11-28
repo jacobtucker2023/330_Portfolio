@@ -92,7 +92,7 @@ p {
 
 .highlights h2{
   left: 5%;
-  color: white;
+  color: #05386B;
   top: 0;
   margin-top: 0;
 }
@@ -100,12 +100,13 @@ p {
 .highlights p{
   width: 1000px;
   max-width: 85%;
-  color: #EDF5E1;
+  font-size: 18px;
+  color: white;
 }
 
 .description h2{
   left: 5%;
-  color: white;
+  color: #05386B;
   top: 0;
   margin-top: 0;
 }
@@ -113,7 +114,8 @@ p {
 .description p {
   width: 1000px;
   max-width: 85%;
-  color: #EDF5E1;
+  color: white;
+  font-size: 18px;
 }
 
 .projectlist{
