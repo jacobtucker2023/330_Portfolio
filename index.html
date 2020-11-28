@@ -1,0 +1,103 @@
+<!-- Hello World -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <title>Jacob Tucker</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='stylesheet' href='main.css'>
+  <script type='text/javascript' src='./main.js'></script>
+
+</head>
+
+<body>
+  <div class="opening">
+    <h1>JT</h1>
+    <h2>Jacob Tucker's Portfolio</h2>
+  </div>
+
+  <!-- This whole section is for handeling the navbar, how its structured and how it acts -->
+  <div class='nav_bar' id="navbar" aria-describedby="navbar">
+    <h2>
+      <a href='#'>Jacob Tucker</a>
+    </h2>
+    <a class="navbar_burgericon" id="spans" onclick="slideNavbar()" onkeypress="slideNavbar()" tabindex="1"
+      aria-describedby="navbar burger icon to all the links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <!-- Navbar part of slider -->
+    <div class="navbar_slider" id="navbar_slider" aria-describedby="background for the top part of the navbar slider">
+    </div>
+  </div>
+
+  <!-- Main part of slider -->
+  <div class="navbar_links" id="navbar_links" aria-describedby="the links to the different pages of the portfolio site">
+    <p aria-labelledby="about me page">01.</p>
+    <a href='#' tabindex="2">
+      <h4>ABOUT ME</h4>
+    </a>
+    <p aria-labelledby="projects page">02.</p>
+    <a href='./projects/projects.html' tabindex="3">
+      <h4>PROJECTS</h4>
+    </a>
+    <p aria-labelledby="contact page">03.</p>
+    <a href='./contact/contact.html' tabindex="4">
+      <h4>CONTACT</h4>
+    </a>
+    <p aria-labelledby="resume page">04.</p>
+    <a target="_blank" href='./gifs/resume.pdf' tabindex="5">
+      <h4>RESUME</h4>
+    </a>
+  </div>
+
+  <!-- the area below the navbar -->
+  <div class="all" aria-describedby="this is all the information for the about me page">
+    <!-- left side of the page -->
+    <div class='content' aria-describedby="this is the content that covers the intro and profile picture">
+      <p>Hey there, my name is</p>
+      <h1>Jacob Tucker.</h1>
+      <h1>I'm a software engineer.</h1>
+      <img src='./gifs/amazingprofilepic.png' class="superamazingprofilepic" alt="my beautiful profile picture" />
+    </div>
+    <!-- right side of the page -->
+    <div class="aboutme-desc" aria-describedby="this is the description of myself">
+      <h2 class="aboutme-title" aria-describedby="this is the title for the about me section">
+        <hr class="thin">
+        About Me
+        <hr class="thin">
+      </h2>
+      <p>I am currently an undergraduate student at Northwestern University, and I love building full-stack
+        applications.
+      </p>
+      <p>I have completed multiple projects which can be seen on my projects page. Most of my projects involve
+        HTML, CSS, & Javascript libraries such as React.js. Most of my efforts have been in front-end in those languages
+        and
+        back-end development in Node.js and Express.js.
+      </p>
+      <p>I am currently working at Decentology, which is a startup devoted to helping Blockchain developers start
+        building their Dapps
+        quickly. I am working as a Software Architect & Blockchain Developer there.
+      </p>
+    </div>
+  </div>
+
+  <!-- the links at the bottom of the page -->
+  <div class="bottominfo" id="bottominfo" aria-describedby="the external links on the bottom">
+    <a href='https://github.com/jacobtucker2023' target='_blank' class="githublogomain" tabindex="6">
+      <img src='./gifs/githublogo.png' alt="github logo picture" />
+    </a>
+    <a href='https://www.linkedin.com/in/jacob-tucker-7435221b1/' target='_blank' class="linkedinlogomain" tabindex="7">
+      <img src='./gifs/linkedinlogo2.png' alt="linkedin logo picture" />
+    </a>
+    <a href='mailto: jacobtucker2023@u.northwestern.edu' class="emaillogomain" tabindex="8">
+      <img src='./gifs/emailicon.png' alt="email logo picture" />
+    </a>
+  </div>
+</body>
+
+</html>

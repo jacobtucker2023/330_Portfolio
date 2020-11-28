@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <title>Jacob Tucker</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='stylesheet' href='../main.css'>
+  <link rel='stylesheet' href='./projects.css'>
+  <script type='text/javascript' src='../main.js'></script>
+  <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"> </script>
+  <script src="https://cdn.anychart.com/themes/2.0.0/sea.min.js"></script>
+
+</head>
+
+<body>
+  <!-- This is where the navbar code gets filled in -->
+  <div class='nav_bar' id="navbar" aria-describedby="navbar">
+
+  </div>
+  <!-- This is where the animation comes in if the hamburger icon is clicked -->
+  <div class="navbar_links" id="navbar_links"
+    aria-describedby="the links to all the different pages on the portfolio site">
+
+  </div>
+
+  <!-- title of the page -->
+  <div class="head-title" aria-describedby="the title of the page">
+    <h1>02. Projects</h1>
+  </div>
+
+  <!-- the entire list of projects (4 total) -->
+  <div class="projectlist" aria-describedby="all of the projetcts in a list, each represented by a block">
+
+    <!-- 1st project WITH STRUCTURE COMMENTS -->
+    <div class="project-element" aria-describedby="a project element">
+      <!-- the arrow that allows you to view the project -->
+      <a href="./musiclifev2.html" tabindex="6">
+        <img class="arrow" src='../gifs/arrow.png' alt="picture of an arrow to look into this project" />
+      </a>
+      <!-- this is the link that will take you to the github link -->
+      <a href='https://github.com/jacob-tucker/MusicLifev2' target='_blank' class="githublogo" tabindex="7">
+        <img src='../gifs/githublogo.png' alt="github logo" />
+      </a>
+      <!-- this is the link that will take you to the actual application -->
+      <a href='https://musiclifev2.netlify.app/' target='_blank' class="openlogo" tabindex="8">
+        <img src='../gifs/openlinkicon.png' alt="open link icon" />
+      </a>
+      <h2>MusicLifev2</h2>
+      <p class="sums">A complete design overhaul of MusicLife, which is a social media platform
+        for users who love music.
+      </p>
+      <p class="codes" aria-labelledby="these are the languages/libraries/things used">CSS React Redux Firebase</p>
+    </div>
+
+    <!-- 2nd project -->
+    <div class="project-element" aria-describedby="a project element">
+      <a href="./searchalgorithmtool.html" tabindex="9">
+        <img class="arrow" src='../gifs/arrow.png' alt="picture of an arrow to look into this project" />
+      </a>
+      <a href='https://github.com/jacob-tucker/Search-Algorithm-Tool' target='_blank' class="githublogo" tabindex="10">
+        <img src='../gifs/githublogo.png' alt="github logo" />
+      </a>
+      <a href='https://searchalgorithmtool.netlify.app/' target='_blank' class="openlogo" tabindex="11">
+        <img src='../gifs/openlinkicon.png' alt="open link icon" /></a>
+      <h2>Search Algorithm Tool</h2>
+      <p class="sums">A web application that helps users learn about graph search algorithms with built in tools
+        such as auto-generating mazes, the ability to add walls, and more.</p>
+      <p class="codes" aria-labelledby="these are the languages/libraries/things used">React HTML CSS Javascript</p>
+    </div>
+
+    <!-- 3rd project -->
+    <div class="project-element" aria-describedby="a project element">
+      <a href="./spotifyaid.html" tabindex="12">
+        <img class="arrow" src='../gifs/arrow.png' alt="picture of an arrow to look into this project" />
+      </a>
+      <a href='https://github.com/jacob-tucker/SpotifyAid' target='_blank' class="githublogo" tabindex="13">
+        <img src='../gifs/githublogo.png' alt="github logo" />
+      </a>
+      <a href='https://spotifyaid.netlify.app/' target='_blank' class="openlogo" tabindex="14">
+        <img src='../gifs/openlinkicon.png' alt="open link icon" />
+      </a>
+      <h2>SpotifyAid</h2>
+      <p class="sums">Spotify tool that shows users their top artists and tracks, allows the users to
+        view statistical data about their favorite songs and albums, and more.
+      </p>
+      <p class="codes" aria-labelledby="these are the languages/libraries/things used">React Sass Node.js Spotify Web
+        API Axios</p>
+    </div>
+
+    <!-- 4th project -->
+    <div class="project-element" aria-describedby="a project element">
+      <a href="./easytalkv2.html" tabindex="15">
+        <img class="arrow" src='../gifs/arrow.png' alt="picture of an arrow to look into this project" />
+      </a>
+      <a href='https://github.com/jacob-tucker/EasyTalkv2' target='_blank' class="githublogo" tabindex="16">
+        <img src='../gifs/githublogo.png' alt="github logo" />
+      </a>
+      <a href='https://easytalkv2.netlify.app/' target='_blank' class="openlogo" tabindex="17">
+        <img src='../gifs/openlinkicon.png' alt="open link icon" />
+      </a>
+      <h2>EasyTalkv2</h2>
+      <p class="sums">Chat application that allows users to send messages simultaneously and pick up conversations
+        from where they left off at any time, along with the ability to personally customize the design.</p>
+      <p class="codes2" aria-labelledby="these are the languages/libraries/things used">React Node.js Express Socket.io
+        NoSQL JWT Axios</p>
+    </div>
+  </div>
+
+  <div id="container"></div>
+  <script>
+    anychart.onDocumentReady(function () {
+
+      // set the data
+      var data = {
+        header: ["Project", "Difficulty"],
+        rows: [
+          ["MusicLifev2", 9000],
+          ["Search Algorithm Tool", 6000],
+          ["SpotifyAid", 5000],
+          ["EasyTalkv2", 7500]
+        ]
+      };
+      // apply the theme
+      anychart.theme(anychart.themes.sea);
+
+      // create the chart
+      var chart = anychart.column();
+
+      // add the data
+      chart.data(data);
+
+      // set the chart title
+      chart.title("My Projects Ranked By Difficulty");
+
+      // draw
+      chart.container("container");
+      chart.draw();
+    });
+  </script>
+
+  <!-- the external links at the bottom of the page -->
+  <div class="bottominfo" id="bottominfo" aria-describedby="the external links on the bottom">
+    <a href='https://github.com/jacobtucker2023' target='_blank' class="githublogomain" tabindex="18">
+      <img src='../gifs/githublogo.png' alt="github logo picture" />
+    </a>
+    <a href='https://www.linkedin.com/in/jacob-tucker-7435221b1/' target='_blank' class="linkedinlogomain"
+      tabindex="19">
+      <img src='../gifs/linkedinlogo2.png' alt="linkedin logo picture" />
+    </a>
+    <a href='mailto: jacobtucker2023@u.northwestern.edu' class="emaillogomain" tabindex="20">
+      <img src='../gifs/emailicon.png' alt="email logo picture" />
+    </a>
+  </div>
+
+</body>
+
+
+<script>
+  fillNavForProjects();
+</script>
+
+</html>

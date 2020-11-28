@@ -1,0 +1,100 @@
+<!-- activeState World -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <title>Jacob Tucker</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='stylesheet' href='../main.css'>
+  <link rel='stylesheet' href='./contact.css'>
+  <script type='text/javascript' src='../main.js'></script>
+
+</head>
+
+<body>
+  <div class='nav_bar' id="navbar" aria-describedby="navbar">
+    <h2>
+      <a href='#'>Jacob Tucker</a>
+    </h2>
+    <a class="navbar_burgericon" id="spans" onclick="slideNavbar()" onkeypress="slideNavbar()" tabindex="1">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <!-- navbar part that slides out -->
+    <div class="navbar_slider" id="navbar_slider" aria-describedby="the navbar part of the slider">
+    </div>
+  </div>
+
+  <!-- Main part of slider where all the links to all the pages of the portfolio are -->
+  <div class="navbar_links" id="navbar_links" aria-describedby="the links to all the pages of the portfolio">
+    <p aria-labelledby="about me page">01.</p>
+    <a href='../index.html' tabindex="2">
+      <h4>ABOUT ME</h4>
+    </a>
+    <p aria-labelledby="projects page">02.</p>
+    <a href='../projects/projects.html' tabindex="3">
+      <h4>PROJECTS</h4>
+    </a>
+    <p aria-labelledby="contact page">03.</p>
+    <a href='#' tabindex="4">
+      <h4>CONTACT</h4>
+    </a>
+    <p aria-labelledby="resume page">04.</p>
+    <a target="_blank" href='../gifs/resume.pdf' tabindex="5">
+      <h4>RESUME</h4>
+    </a>
+  </div>
+
+  <!-- the title of the webpage -->
+  <div class="head-title" aria-describedby="the title of the page">
+    <h1>03. Reach Out</h1>
+  </div>
+
+  <!-- the main part of the page with the button to email and a short description :) -->
+  <div class="contact-content" aria-describedby="main contact content with a short goodbye and link to email">
+    <p>I would be greatful to hear from you, whether it's to say hi or to ask any questions
+      you may have. Please feel free to fill out the form below to send me an email. My inbox is always open and I hope
+      to get in touch!</p>
+  </div>
+
+  <form action="mailto:jacobtucker2023@u.northwestern.edu" method="post" enctype="text/plain" class="form"
+    aria-describedby="form for contact">
+    <label for="name">Name:</label>
+    <input type="text" name="name" aria-labelledby="name">
+    <label for="phone">Phone Number (xxx-xxx-xxxx):</label>
+    <input type="tel" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-labelledby="phone">
+    <label for="email">Email:</label>
+    <input type="email" name="mail" aria-labelledby="email">
+    <label for="message">Message:</label>
+    <textarea type="text" name="comment" size="50" aria-labelledby="message"></textarea>
+    <label for="reasons">Reasons for Contact:</label>
+    <div id="reasons" aria-describedby="reasons for contacting" aria-labelledby="reasons">
+      <input type="checkbox" id="reason1" name="reason1" value="Recruitment" aria-labelledby="reason1">
+      <label for="reason1">Recruitment</label>
+      <input type="checkbox" id="reason1" name="reason2" value="Personal" aria-labelledby="reason2">
+      <label for="reason2">Personal</label>
+      <input type="checkbox" id="vehicle3" name="reason3" value="Question" aria-labelledby="reason3">
+      <label for="reason3">Question</label>
+    </div>
+    <div aria-labelledby="form buttons">
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+
+  <!-- bottom info with external links -->
+  <div class="bottominfo" id="bottominfo" aria-describedby="the external links on the bottom">
+
+  </div>
+</body>
+
+<script>
+  fillBottomInfo()
+</script>
+
+</html>

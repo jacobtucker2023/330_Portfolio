@@ -1,0 +1,85 @@
+.contact-content button{
+  background: #8EE4AF;
+  font-family: 'Arial';
+  font-weight: 500;
+  font-size: 30px;
+  border-radius: 5px;
+  width: 150px;
+  height: 75px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  outline: 0;
+  border: 0;
+}
+
+.head-title {
+  position: relative;
+  top: 150px;
+  left: 15%;
+  width: 85%;
+}
+
+.head-title h1{
+  margin: 0;
+  font-size: 60px;
+  color: white;
+  margin-right: 10%;
+  margin-bottom: 150px;
+}
+
+.contact-content {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: rgb(44,107,122);
+  width: 75%;
+  left: 12.5%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-content p {
+  color: white;
+  font-size: 30px;
+  font-family: 'Arial';
+}
+
+.form {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.form label {
+  color: white;
+  font-size: 30px;
+}
+
+.form input, .form textarea {
+  border: 0;
+  outline: 0;
+  background: #8EE4AF;
+  color: white;
+  font-size: 30px;
+}
+
+.form div {
+  display: flex;
+}
+
+.form #reasons label {
+  font-size: 20px;
+  color: #05386B;
+}
+
+.form input[type="submit"], .form input[type="reset"] {
+  margin-top: 10px;
+  width: 25%;
+  margin-right: 10px;
+}
